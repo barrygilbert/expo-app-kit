@@ -1,0 +1,39 @@
+{
+  "name": "@barrygg80/expo-app-kit",
+  "version": "0.1.0",
+  "description": "Shared Expo app utilities and UI components",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:js": "tsup src/index.ts --format cjs,esm",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build": "yarn build:js && yarn build:types",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@expo/vector-icons": "*",
+    "@react-native-firebase/analytics": "*",
+    "@react-navigation/native": "*",
+    "expo": "*",
+    "expo-constants": "*",
+    "expo-iap": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-google-mobile-ads": "*"
+  },
+  "devDependencies": {
+    "@expo/vector-icons": "^15.1.1",
+    "@react-navigation/native": "^7.2.5",
+    "@types/node": "^25.9.1",
+    "@types/react": "~19.1.10",
+    "expo-constants": "^56.0.16",
+    "react-native": "^0.85.3",
+    "react-native-google-mobile-ads": "^16.3.3",
+    "tsup": "^8.5.1",
+    "typescript": "^5.0.0"
+  },
+  "license": "MIT"
+}
