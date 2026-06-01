@@ -1,6 +1,6 @@
 {
-  "name": "@barrygg80/expo-app-kit",
-  "version": "0.1.0",
+  "name": "@barrygilbert/expo-app-kit",
+  "version": "0.9.0",
   "description": "Shared Expo app utilities and UI components",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
