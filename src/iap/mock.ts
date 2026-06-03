@@ -2,7 +2,7 @@
 export const useIAP = () => ({
   connected: false,
   products: [],
-  getProducts: () => {},
+  fetchProducts: () => {},
   requestPurchase: () => {},
   currentPurchase: null,
   finishTransaction: () => {},
